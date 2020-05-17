@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Do You Love Me</title>
+</head>
+<body>
+<style>
+    #no {
+        position: absolute;
+    }
+</style>
+    <h1>Do You Love Me?</h1>
+    <input type="button" id="yes" onclick="yesIDo()" value="Yes">
+    <input type="button" id="no" onmouseover="noIdo()" value="No">
+<script>
+    function yesIDo() {
+       document.getElementById("yes").value;
+       alert("Yeah! I Love You Too!");
+    }
+    function noIdo() {
+        let a = moVex();
+        let b = moVey();
+        document.getElementById("no").style.top = b + "px";
+        document.getElementById("no").style.left = a + "px";
+    }
+    function moVex() {
+        let x =  Math.random() * 800;
+        return x;
+    }
+    function moVey() {
+       let y = Math.random() * 600;
+        return y;
+    }
+</script>
+</body>
+</html>
